@@ -113,7 +113,7 @@ def generate_flux(prompt: str) -> bytes:
 # Page configuration & styling
 MINT = "#DFF6EF"
 GMS_GREEN = "#18BC62"
-st.set_page_config(page_title="Flux Image Generator", layout="centered")
+st.set_page_config(page_title="AI Image Generator", layout="centered")
 st.markdown(f"""
     <style>
     .main .block-container {{
