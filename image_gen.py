@@ -163,7 +163,7 @@ with col2:
         st.markdown(f'<h2 style="color: {GMS_GREEN}; text-align: center; margin: 0;">Flux Generator</h2>',
                     unsafe_allow_html=True)
 
-st.markdown('<div class="gms-title">Flux Image Generator</div>', unsafe_allow_html=True)
+st.markdown('<div class="gms-title">AI Image Generator</div>', unsafe_allow_html=True)
 
 # -----------------------------------------------------------------------------
 # Main input form
