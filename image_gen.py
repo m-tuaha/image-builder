@@ -209,7 +209,7 @@ with col2:
                 try:
                     img_bytes = generate_flux(prompt_to_send)
                     st.success("✅ Visual generated successfully!")
-                    st.image(img_bytes, caption="Generated Image", use_column_width=True)
+                    st.image(img_bytes, caption="Generated Image", use_container_width=True)
                     st.download_button(
                         label="📥 Download Image",
                         data=img_bytes,
