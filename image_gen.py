@@ -60,7 +60,8 @@ def generate_flux(prompt: str) -> bytes:
     # Updated payload with correct model reference
     payload = {
         # Incase you want to use a specific version of the model, use this line "version": "5ac7c24da9a1efd1da31982050005b039b899ea67a91c7bd7dce7c9f8e29e3b4"
-        "input": {
+       "model": "black-forest-labs/flux-schnell", 
+       "input": {
             "prompt": prompt,
             "num_outputs": 1,
             "aspect_ratio": "1:1",
