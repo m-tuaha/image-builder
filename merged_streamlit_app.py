@@ -479,7 +479,7 @@ if "refined_prompt" not in st.session_state:
     st.session_state.refined_prompt = ""
 
 # ---- Main tab interface ----
-tab1, tab2 = st.tabs(["📝 Content Generator", "🎨 Image Generator"])
+tab1, tab2 = st.tabs(["📝 Text Generator", "🎨 Image Generator"])
 
 # ---- CONTENT GENERATOR TAB ----
 with tab1:
