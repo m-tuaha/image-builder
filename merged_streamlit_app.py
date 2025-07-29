@@ -683,7 +683,7 @@ with tab2:
     editable_prompt = st.text_area(
         "Refined prompt (editable)",
         value=current_refined,
-        placeholder="Short of ideas??? Use the refine prompt option to get a more descriptive prompt for your image. You can also edit the refined prompt",
+        placeholder="Short of ideas? Use the refine prompt option to get a more descriptive prompt.",
         height=120,
         key="image_editable_prompt"
     )
