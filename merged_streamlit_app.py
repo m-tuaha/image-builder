@@ -345,7 +345,7 @@ st.markdown(f"""
 if os.path.exists("gms_logo.png"):
     st.markdown(
         """
-        <div style='position: fixed; top: 20px; left: 20px; z-index: 999;'>
+        <div style='position: fixed; top: 80px; left: 20px; z-index: 999;'>
             <img src='data:image/png;base64,{}' width='120'>
         </div>
         """.format(
