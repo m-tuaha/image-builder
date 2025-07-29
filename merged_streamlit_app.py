@@ -370,7 +370,16 @@ if os.path.exists("magic.png"):
         unsafe_allow_html=True
     )
 
-st.markdown(f"<h1 style='color:{GMS_GREEN};text-align:center;'>AI Content & Image Generator</h1>", unsafe_allow_html=True)
+st.markdown(f"""
+    <h1 style='
+        color:{GMS_GREEN};
+        text-align:center;
+        margin-top: 80px;
+        margin-bottom: 20px;
+        font-size: 2.5rem;
+        font-weight: 700;
+    '>AI Content Builder</h1>
+""", unsafe_allow_html=True)
 
 # ---- Content generation system prompt ----
 system_prompt = """You are a Maestro Multichannel Campaign Content Creator for business messaging. Your ONLY function is to generate campaign messages for SMS, WhatsApp, or Viber, strictly following the instructions and JSON schemas below.
@@ -461,9 +470,9 @@ if "refined_prompt" not in st.session_state:
     st.session_state.refined_prompt = ""
 
 # ---- Main tab interface ----
-tab1, tab2 = st.tabs(["📝 Content Generator", "🎨 Image Generator"])
+tab1, tab2 = st.tabs(["📝 Text Generator", "🎨 Image Generator"])
 
-# ---- CONTENT GENERATOR TAB ----
+# ---- TEXT GENERATOR TAB ----
 with tab1:
     # ---- Input Form ----
     with st.form("campaign_form"):
