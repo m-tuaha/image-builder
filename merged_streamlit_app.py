@@ -713,7 +713,7 @@ with tab2:
                         st.error(f"❌ Prompt enhancement failed: {e}")
 
     with col2:
-        if st.button("🎨 Generate Image", key="generate_image_btn", use_container_width=True)):
+        if st.button("🎨 Generate Image", key="generate_image_btn", use_container_width=True):
             prompt_to_send = st.session_state.get("refined_prompt", "").strip() or raw_prompt.strip()
             if not prompt_to_send:
                 st.error("❌ No prompt available for generation.")
