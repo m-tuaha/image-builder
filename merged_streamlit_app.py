@@ -335,7 +335,7 @@ st.markdown(f"""
             bottom: 80px;
             right: 20px;
             z-index: 999;
-            width: 100px;
+            width: 150px;
             opacity: 0.8;
         }}
     </style>
@@ -346,7 +346,7 @@ if os.path.exists("gms_logo.png"):
     st.markdown(
         """
         <div style='position: fixed; top: 80px; left: 20px; z-index: 999;'>
-            <img src='data:image/png;base64,{}' width='120'>
+            <img src='data:image/png;base64,{}' width='200'>
         </div>
         """.format(
             base64.b64encode(open("gms_logo.png", "rb").read()).decode()
