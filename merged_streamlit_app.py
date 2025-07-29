@@ -332,7 +332,7 @@ st.markdown(f"""
         /* Magic image at bottom right */
         .magic-image {{
             position: fixed;
-            bottom: 20px;
+            bottom: 80px;
             right: 20px;
             z-index: 999;
             width: 100px;
