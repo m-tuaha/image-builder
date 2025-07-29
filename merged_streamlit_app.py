@@ -245,11 +245,20 @@ GMS_LAVENDER = "#D5D7FB"
 st.markdown(f"""
     <style>
         .stApp {{ background-color: {GMS_TEAL}; }}
+        st.markdown(f"""
+    <h1 style='
+        color:{GMS_GREEN};
+        text-align:center;
+        margin-top: 40px;
+        margin-bottom: 1.5em;
+        font-size: 2.5rem;
+        font-weight: 700;
+    '>AI Content Builder</h1>
+""", unsafe_allow_html=True)
         .block-container {{
             background-color: white !important;
             border-radius: 24px;
             padding: 2em 3em;
-            margin-top: 2em;
             box-shadow: 0 0 20px {GMS_LAVENDER};
         }}
         .stButton>button, button[kind="primary"] {{
@@ -460,17 +469,6 @@ if "refined_prompt" not in st.session_state:
     st.session_state.refined_prompt = ""
 
 # ---- Main tab interface ----
-st.markdown(f"""
-    <h1 style='
-        color:{GMS_GREEN};
-        text-align:center;
-        margin-top: 40px;
-        margin-bottom: 1.5em;
-        font-size: 2.5rem;
-        font-weight: 700;
-    '>AI Content Builder</h1>
-""", unsafe_allow_html=True)
-
 tab1, tab2 = st.tabs(["📝 Text Generator", "🎨 Image Generator"])
 
 # ---- TEXT GENERATOR TAB ----
