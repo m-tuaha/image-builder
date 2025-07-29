@@ -332,7 +332,7 @@ st.markdown(f"""
         /* Magic image at top right */
         .magic-image {{
             position: fixed;
-            top: 80px;
+            bottom: 80px;
             right: 20px;
             z-index: 999;
             width: 200px;
@@ -696,7 +696,7 @@ with tab2:
     col1, col2 = st.columns([1, 1])
 
     with col1:
-        if st.button("🔄 Refine Prompt", key="refine_prompt_btn"):
+        if st.button("🔄 Refine Prompt", key="refine_prompt_btn", use_container_width=True):
             if not raw_prompt.strip():
                 st.error("❌ Please enter a prompt to refine.")
             else:
