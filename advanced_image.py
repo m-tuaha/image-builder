@@ -6,7 +6,6 @@ import requests
 import os
 import time
 import base64
-import replicate
 from openai import OpenAI
 
 # Initialize Image-Generator session state
